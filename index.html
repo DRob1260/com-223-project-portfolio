@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<style>
+  #members .MemberName {
+    margin: 0;
+  }
+
+  #members {
+    padding-top: 15px;
+  }
+
+  #members .jumbotron {
+    padding: 32px;
+  }
+
+  #accordion .card-body {
+    padding: 0;
+  }
+
+  #accordion {
+    padding: 15px;
+  }
+
+  #logo {
+    margin-right: 15px;
+  }
+
+  .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .scrolling-wrapper-flexbox .card {
+    flex: 0 0 auto;
+  }
+</style>
+<html>
+  <head>
+    <title>Team 777 Project Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body id="bootstrap-overrides">
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">COM 223 Project Portfolio</a>
+      </nav>
+    </header>
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h3 class="text-danger">Team 777</h3>
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseOne"
+          class="collapse show"
+          aria-labelledby="headingOne"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <div class="container-fluid" id="members">
+              <div class="row">
+                <div class="col">
+                  <div class="jumbotron">
+                    <div class="scrolling-wrapper-flexbox team">
+                      <div class="col my-auto">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/1/12/Lucky_seven.svg"
+                          width="200px"
+                          id="logo"
+                        />
+                      </div>
+                      <div
+                        class="card border text-center"
+                        style="width: 200px;"
+                      >
+                        <img
+                          src="https://placekitten.com/200/200"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title text-danger MemberName">
+                            Arthur
+                          </h4>
+                          <div>Treasurer</div>
+                        </div>
+                      </div>
+                      <div
+                        class="card border text-center"
+                        style="width: 200px;"
+                      >
+                        <img
+                          src="https://placekitten.com/200/200"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title text-danger MemberName">
+                            Braden
+                          </h4>
+                          <div>Recorder</div>
+                        </div>
+                      </div>
+                      <div
+                        class="card border text-center"
+                        style="width: 200px;"
+                      >
+                        <img
+                          src="https://placekitten.com/200/200"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title text-danger MemberName">
+                            Drew
+                          </h4>
+                          <div>Webmaster</div>
+                        </div>
+                      </div>
+                      <div
+                        class="card border text-center"
+                        style="width: 200px;"
+                      >
+                        <img
+                          src="https://placekitten.com/200/200"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title text-danger MemberName">
+                            Jason
+                          </h4>
+                          <div>Liason</div>
+                        </div>
+                      </div>
+                      <div
+                        class="card border text-center"
+                        style="width: 200px;"
+                      >
+                        <img
+                          src="https://placekitten.com/200/200"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title text-danger MemberName">
+                            Michael
+                          </h4>
+                          <div>Historian</div>
+                        </div>
+                      </div>
+                      <div
+                        class="card border text-center"
+                        style="width: 200px;"
+                      >
+                        <img
+                          src="https://placekitten.com/200/200"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title text-danger MemberName">
+                            Tyler
+                          </h4>
+                          <div>Treasurer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  [mission statement]
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  [rules]
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link collapsed"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <h3 class="text-danger">The Project</h3>
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse"
+          aria-labelledby="headingTwo"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                [brief description]
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                [link to project proposal]
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                [goals]
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                [proposed timeline]
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link collapsed"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <h3 class="text-danger">The Results</h3>
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseThree"
+          class="collapse"
+          aria-labelledby="headingThree"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                [link to reports]
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                [actual timeline]
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                [breakdown of hours]
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                [link to closeout report]
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                [link to mid-project assessment]
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
