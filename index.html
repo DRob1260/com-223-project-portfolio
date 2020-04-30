@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <style>
+  .needToAdd {
+    color: greenyellow;
+  }
 
-  .content {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+  #bootstrap-overrides {
+    height: 100vh;
+  }
+
+  #bootstrap-overrides .content {
+    padding: 30px;
   }
 
   #members .MemberName {
@@ -18,6 +22,23 @@
 
   #members .jumbotron {
     padding: 32px;
+  }
+
+  #memberScrollButton {
+    float: right;
+    cursor: pointer;
+  }
+
+  #chevron-left {
+    display: none;
+    position: absolute;
+    top: 35%;
+  }
+
+  #chevron-right {
+    right: 50px;
+    position: absolute;
+    top: 35%;
   }
 
   #accordion .card-body {
@@ -50,11 +71,21 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script>
+      function leftChevronClicked() {
+        document.getElementById("chevron-left").style.display = "none";
+        document.getElementById("chevron-right").style.display = "block";
+      }
+      function rightChevronClicked() {
+        document.getElementById("chevron-right").style.display = "none";
+        document.getElementById("chevron-left").style.display = "block";
+      }
+    </script>
   </head>
 
   <body id="bootstrap-overrides">
     <header>
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-dark bg-primary">
         <a class="navbar-brand" href="#">COM 223 Project Portfolio</a>
       </nav>
     </header>
@@ -85,7 +116,7 @@
               <div class="row">
                 <div class="col">
                   <div class="jumbotron">
-                    <div class="scrolling-wrapper-flexbox team">
+                    <div class="scrolling-wrapper-flexbox team" id="scrollRow">
                       <div class="col my-auto">
                         <img
                           src="https://upload.wikimedia.org/wikipedia/commons/1/12/Lucky_seven.svg"
@@ -177,19 +208,36 @@
                           class="card-img-top"
                         />
                         <div class="card-body">
-                          <h4 class="card-title text-danger MemberName">
+                          <h4
+                            class="card-title text-danger MemberName"
+                            id="endCard"
+                          >
                             Tyler
                           </h4>
                           <div>Treasurer</div>
                         </div>
                       </div>
                     </div>
+                    <!-- <a
+                      href="#logo"
+                      onclick="leftChevronClicked()"
+                      id="chevron-left"
+                    >
+                      <i class="fas fa-chevron-left fa-3x"></i>
+                    </a>
+                    <a
+                      href="#endCard"
+                      onclick="rightChevronClicked()"
+                      id="chevron-right"
+                    >
+                      <i class="fas fa-chevron-right fa-3x"></i>
+                    </a> -->
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col">
-                  [mission statement]
+                <div class="col needToAdd">
+                  <h5>[mission statement]</h5>
                 </div>
               </div>
               <br />
@@ -319,7 +367,13 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <h5><a href="#">See full project proposal</a></h5>
+                  <h5>
+                    <a
+                      target="_blank"
+                      href="https://drive.google.com/open?id=1MKsIE2dd2LgZfx7G3jm0e6x-AwlDTektpEWycgh4IWo"
+                      >See Full Project Proposal</a
+                    >
+                  </h5>
                 </div>
               </div>
             </div>
@@ -349,19 +403,15 @@
           <div class="card-body">
             <div class="container-fluid content" id="results">
               <div class="row">
-                <div class="col">
-                  [actual timeline]
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  [breakdown of hours]
+                <div class="col needToAdd">
+                  <h5>[breakdown of hours]</h5>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <h5>
                     <a
+                      target="_blank"
                       href="https://drive.google.com/open?id=1upu2Kz0C3eKbzi1rXYajpzW5HPWqF8p1"
                       >Meeting Reports</a
                     >
@@ -370,12 +420,28 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <h5><a href="#">Mid-project Assessment</a></h5>
+                  <h5 class="needToAdd">
+                    <a target="_blank" href="#">Mid-project Assessment</a>[need
+                    to add]
+                  </h5>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <h5><a href="#">Closeout Report</a></h5>
+                  <h5 class="needToAdd">
+                    <a target="_blank" href="#">Closeout Report</a>[need to add]
+                  </h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h5>
+                    <a
+                      target="_blank"
+                      href="https://boinc.bakerlab.org/rosetta/team_members.php?teamid=19566&offset=0&sort_by=expavg_credit"
+                      >View Rosetta@home Team Stats</a
+                    >
+                  </h5>
                 </div>
               </div>
             </div>
@@ -397,6 +463,10 @@
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ba7b0075da.js"
       crossorigin="anonymous"
     ></script>
   </body>
